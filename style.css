@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Noto";
+  src: url(assets/fonts/static/NotoSans-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto";
+  background-color: hsl(217, 61%, 90%);
+}
+.head {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 20px;
+  background-color: hsl(200, 60%, 99%);
+  font-weight: bold;
+}
+.moon-logo {
+  background-color: hsl(0, 0%, 78%);
+  border-radius: 8px;
+  padding: 10px;
+}
+.item {
+  background-color: hsl(200, 60%, 99%);
+  margin: 20px;
+  padding: 10px;
+}
