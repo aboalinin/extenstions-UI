@@ -13,6 +13,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Noto";
@@ -34,10 +35,19 @@ body {
   padding: 10px;
 }
 
+main {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
 .item {
   background-color: var(--on-background);
   margin: 20px;
   padding: 10px;
+  width: 30%;
+  min-height: 220px;
 }
 
 .options {
@@ -52,9 +62,42 @@ body {
   color: var(--headings);
   font-weight: 900;
 }
+
 .options > :nth-child(2) > span {
   background-color: var(--on-background);
   margin: 0 5px;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+.item {
+  min-width: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-top {
+  display: flex;
+}
+.item-head {
+  font-size: 20px;
+  font-weight: 900;
+}
+.item-logo {
+  margin-right: 15px;
+  height: fit-content;
+  width: fit-content;
+}
+.item-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.remove {
+  align-self: center;
+  font-weight: 700;
+  border: solid 2px black;
+  border-radius: 50px;
+  padding: 7px 13px;
 }
