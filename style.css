@@ -3,32 +3,58 @@
   src: url(assets/fonts/static/NotoSans-Regular.ttf) format("truetype");
 }
 
+:root {
+  --on-background: hsl(200, 60%, 99%);
+  --background: hsl(217, 61%, 90%);
+  --option-logo: hsl(0, 0%, 78%);
+  --headings: hsl(226, 25%, 17%);
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
   font-family: "Noto";
-  background-color: hsl(217, 61%, 90%);
+  background-color: var(--background);
 }
 .head {
-  color: white;
   display: flex;
   justify-content: space-between;
   width: 80%;
   padding: 20px;
   margin: 30px auto;
   border-radius: 20px;
-  background-color: hsl(200, 60%, 99%);
+  background-color: var(--on-background);
   font-weight: bold;
 }
-.moon-logo {
-  background-color: hsl(0, 0%, 78%);
+.option-logo {
+  background-color: var(--option-logo);
   border-radius: 8px;
   padding: 10px;
 }
+
 .item {
-  background-color: hsl(200, 60%, 99%);
+  background-color: var(--on-background);
   margin: 20px;
   padding: 10px;
+}
+
+.options {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options > :first-child {
+  font-size: 32px;
+  color: var(--headings);
+  font-weight: 900;
+}
+.options > :nth-child(2) > span {
+  background-color: var(--on-background);
+  margin: 0 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
